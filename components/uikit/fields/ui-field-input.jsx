@@ -10,7 +10,13 @@ import clsx from "clsx";
  * id?: string;
  * } & import('react').HTMLAttributes<HTMLInputElement>} props
  */
-export function UiFieldInput({ type = "text", required, errorText, id, ...inputProps }) {
+export function UiFieldInput({
+  type = "text",
+  required,
+  errorText,
+  id,
+  ...inputProps
+}) {
   return (
     <input
       type={type}

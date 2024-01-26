@@ -28,8 +28,15 @@ export function UiTextField({
   return (
     <div className={className}>
       {label && <UiFieldLabel label={label} required={required} htmlFor={id} />}
-      <UiFieldInput required={required} errorText={errorText} id={id} {...inputProps} />
-      {(helperText || errorText) && <UiFieldMessage helperText={helperText} errorText={errorText} />}
+      <UiFieldInput
+        required={required}
+        errorText={errorText}
+        id={id}
+        {...inputProps}
+      />
+      {(helperText || errorText) && (
+        <UiFieldMessage helperText={helperText} errorText={errorText} />
+      )}
     </div>
   );
 }
