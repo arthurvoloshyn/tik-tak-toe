@@ -4,15 +4,16 @@ import clsx from "clsx";
  * Input component for UiTextField.
  *
  * @param {{
+ * type?: string,
  * required?: boolean;
  * errorText?: string;
  * id?: string;
  * } & import('react').HTMLAttributes<HTMLInputElement>} props
  */
-export function UiFieldInput({ required, errorText, id, ...inputProps }) {
+export function UiFieldInput({ type = "text", required, errorText, id, ...inputProps }) {
   return (
     <input
-      type="email"
+      type={type}
       id={id}
       required={required}
       className={clsx([

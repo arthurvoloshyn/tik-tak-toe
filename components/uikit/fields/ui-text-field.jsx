@@ -1,8 +1,8 @@
 import { useId } from "react";
 
 import { UiFieldLabel } from "./ui-field-label";
-import { UiFieldMessage } from "./ui-field-message";
 import { UiFieldInput } from "./ui-field-input";
+import { UiFieldMessage } from "./ui-field-message";
 
 /**
  * Text field component with label and error/helper message.
@@ -27,9 +27,9 @@ export function UiTextField({
 
   return (
     <div className={className}>
-      <UiFieldLabel label={label} required={required} htmlFor={id} />
+      {label && <UiFieldLabel label={label} required={required} htmlFor={id} />}
       <UiFieldInput required={required} errorText={errorText} id={id} {...inputProps} />
-      <UiFieldMessage helperText={helperText} errorText={errorText} />
+      {(helperText || errorText) && <UiFieldMessage helperText={helperText} errorText={errorText} />}
     </div>
   );
 }
