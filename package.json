@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "clsx": "^1.2.1",
