@@ -1,4 +1,4 @@
-export function TringleIcon({ className }) {
+export function TriangleIcon({ className }) {
   return (
     <svg
       className={className}

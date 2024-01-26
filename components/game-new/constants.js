@@ -6,14 +6,14 @@ import avatarSrc4 from "./ui/images/avatar-4.png";
 export const GAME_SYMBOLS = {
   ZERO: "zero",
   CROSS: "cross",
-  TRINGLE: "tringle",
+  TRIANGLE: "triangle",
   SQUARE: "square",
 };
 
 export const MOVE_ORDER = [
   GAME_SYMBOLS.CROSS,
   GAME_SYMBOLS.ZERO,
-  GAME_SYMBOLS.TRINGLE,
+  GAME_SYMBOLS.TRIANGLE,
   GAME_SYMBOLS.SQUARE,
 ];
 
@@ -37,7 +37,7 @@ export const PLAYERS = [
     name: "Lara",
     rating: 1400,
     avatar: avatarSrc3,
-    symbol: GAME_SYMBOLS.TRINGLE,
+    symbol: GAME_SYMBOLS.TRIANGLE,
   },
   {
     id: 4,

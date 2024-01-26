@@ -29,7 +29,7 @@ const players = [
     name: "Lara",
     rating: 1400,
     avatar: avatarSrc3,
-    symbol: GAME_SYMBOLS.TRINGLE,
+    symbol: GAME_SYMBOLS.TRIANGLE,
   },
   {
     id: 4,
