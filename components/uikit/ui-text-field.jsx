@@ -1,8 +1,8 @@
 import { useId } from "react";
-import clsx from "clsx";
 
 import { UiFieldLabel } from "./fields/ui-field-label";
 import { UiFieldInput } from "./fields/ui-field-input";
+import { UiFieldMessage } from "./fields/ui-field-message";
 
 /**
  * @param {{
@@ -27,16 +27,7 @@ export function UiTextField({
     <div className={className}>
       {label && <UiFieldLabel label={label} required={required} htmlFor={id} />}
       <UiFieldInput required={required} errorText={errorText} id={id} {...inputProps} />
-      {(helperText || errorText) && (
-        <p
-          className={clsx(
-            "mt-1 text-sm ",
-            errorText ? "text-orange-600" : "text-slate-400"
-          )}
-        >
-          {errorText ?? helperText}
-        </p>
-      )}
+      {(helperText || errorText) && <UiFieldMessage helperText={helperText} errorText={errorText} />}
     </div>
   );
 }
