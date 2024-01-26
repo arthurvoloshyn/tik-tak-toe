@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { GameSymbol } from "./game-symbol";
 import { memo } from "react";
+import { GameSymbol } from "./game-symbol";
 
 export const GameCell = memo(function GameCell({
   onClick,
@@ -9,7 +9,6 @@ export const GameCell = memo(function GameCell({
   symbol,
   index,
 }) {
-  console.log("rerender cell");
   return (
     <button
       disabled={disabled}

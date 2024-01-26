@@ -1,6 +1,5 @@
 import Image from "next/image";
 import clsx from "clsx";
-
 import avatarSrc from "./avatar.png";
 
 export function Profile({ className, name, rating, avatar = avatarSrc }) {
@@ -15,7 +14,7 @@ export function Profile({ className, name, rating, avatar = avatarSrc }) {
       <div className="overflow-hidden">
         <div className=" text-lg leading-tight truncate ">{name}</div>
         <div className="text-slate-400 text-xs leading-tight">
-          Рейтинг: {rating}
+          Rating: {rating}
         </div>
       </div>
     </div>

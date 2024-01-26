@@ -28,7 +28,6 @@ export function useInterval(interval, enabled, cb) {
     }
 
     const int = setInterval(() => {
-      console.log("interval");
       cb(Date.now());
     }, interval);
 

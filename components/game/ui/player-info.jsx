@@ -36,7 +36,7 @@ export function PlayerInfo({
           <div className="overflow-hidden">
             <div className=" text-lg leading-tight truncate ">{name}</div>
             <div className="text-slate-400 text-xs leading-tight">
-              Рейтинг: {rating}
+              Rating: {rating}
             </div>
           </div>
         </div>

@@ -15,9 +15,9 @@ export function computeWinner(gameState, sequenceSize = 5, fieldSize = 19) {
 
   function getSequenceIndexes(i) {
     const res = [
-      [],
-      [],
-      [],
+      [], // -
+      [], // \
+      [], // /
       [], // |
     ];
 
