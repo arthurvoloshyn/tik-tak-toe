@@ -3,10 +3,9 @@ import clsx from "clsx";
 /**
  * Message component for UiTextField.
  *
- * @param {{
- *   helperText: string,    // The helper text.
- *   errorText: string,     // The error text.
- * }} props
+ * @param {Object} props - The props object.
+ * @param {string} props.helperText - The helper text.
+ * @param {string} props.errorText - The error text.
  * @returns {JSX.Element|null} The message component.
  */
 export function UiFieldMessage({ helperText, errorText }) {

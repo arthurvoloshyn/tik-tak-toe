@@ -5,14 +5,15 @@ import clsx from "clsx";
  *
  * @param {{
  * required?: boolean;
- * isError?: boolean;
- * } & import('react').HTMLAttributes<HTMLInputElement>} props -
+ * errorText?: string;
+ * id?: string;
+ * } & import('react').HTMLAttributes<HTMLInputElement>} props
  */
-export function UiFieldInput({ required, errorText, ...inputProps }) {
+export function UiFieldInput({ required, errorText, id, ...inputProps }) {
   return (
     <input
       type="email"
-      id="example2"
+      id={id}
       required={required}
       className={clsx([
         `

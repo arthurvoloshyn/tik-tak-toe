@@ -6,8 +6,8 @@ import { createPortal } from "react-dom";
  * @param {{
  * className: string,
  * width: 'md' | 'full',
- * isOpen: boolean
- * onClose: Function
+ * isOpen: boolean,
+ * onClose: Function,
  * }} props
  * @returns
  */
@@ -50,7 +50,7 @@ export function UiModal({
         <button
           onClick={onClose}
           className="
-            w-8 h-8 rounded  flex items-center justify-center 
+            w-8 h-8 rounded flex items-center justify-center
             hover:bg-white/40 bg-white/10 transition-colors
             absolute top-0 left-[calc(100%+12px)]"
         >
